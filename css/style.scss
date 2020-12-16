@@ -16,6 +16,7 @@ body {
 
     &-form {
         width: 647px;
+        padding: 30px 0;
 
         &-fields {
             width: 100%;
@@ -263,6 +264,7 @@ body {
                 #email {
                     width: 382px;
                     padding: 9px 12px;
+                    @include span;
                 }
 
                 .back {
@@ -293,53 +295,76 @@ body {
         }
 
         &-job {
-            border:none;
+            border: none;
             margin: 0 0 80px 0;
+
             &-title {
                 @include txt(#212223, 1.28571429em, 24px, L700, HN700, A700);
                 padding: 0 0 24px 0;
             }
 
-            .row1, .row2, .row4, .row5{
+            .row1,
+            .row2,
+            .row4,
+            .row5 {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
             }
 
-            .row3, .row6, .row7, .row8{
+            .row3,
+            .row6,
+            .row7,
+            .row8 {
                 display: flex;
                 justify-content: space-between;
                 align-items: flex-start;
             }
 
-            .row1, .row2, .row4, .row5, .row6, .row7{
+            .row1,
+            .row2,
+            .row4,
+            .row5,
+            .row6,
+            .row7 {
                 margin: 0 0 20px 0;
             }
 
-            .row2, .row3, .row6, .row7, .row8{
-                .left{
-                    &-text{
-                        &::after{
+            .row2,
+            .row3,
+            .row6,
+            .row7,
+            .row8 {
+                .left {
+                    &-text {
+                        &::after {
                             display: none;
                         }
                     }
                 }
             }
 
-            .row3, .row6{
-                .right{
-                    .v1, .v2, .v3, .v4, .v5{
+            .row3,
+            .row6 {
+                .right {
+
+                    .v1,
+                    .v2,
+                    .v3,
+                    .v4,
+                    .v5 {
                         display: flex;
                         align-items: center;
                         margin: 0 0 10px 0;
 
-                        input[type="radio"]{
+                        input[type="radio"] {
                             margin: 0 5px 0 0;
                         }
 
-                        label{
+                        label {
                             @include span;
-                            &:hover{
+
+                            &:hover {
                                 cursor: pointer;
                             }
                         }
@@ -347,27 +372,32 @@ body {
                 }
             }
 
-            .row7{
-                .right{
+            .row7 {
+                .right {
                     height: 75px;
                     display: flex;
                     flex-direction: column;
                     flex-wrap: wrap;
                     justify-content: center;
                     align-content: space-between;
-                    .v1, .v2, .v3, .v4, .v5{
+
+                    .v1,
+                    .v2,
+                    .v3,
+                    .v4,
+                    .v5 {
                         margin: 0 0 5px 0;
                         display: flex;
                         align-items: center;
 
-                        input[type="checkbox"]{
+                        input[type="checkbox"] {
                             margin: 0 5px 0 0;
                         }
 
-                        label{
+                        label {
                             @include span;
 
-                            &:hover{
+                            &:hover {
                                 cursor: pointer;
                             }
                         }
@@ -375,27 +405,31 @@ body {
                 }
             }
 
-            .row8{
-                .right{
+            .row8 {
+                .right {
                     height: 54px;
                     display: flex;
                     flex-direction: column;
                     flex-wrap: wrap;
                     justify-content: center;
                     align-content: space-between;
-                    .v1, .v2, .v3, .v4{
+
+                    .v1,
+                    .v2,
+                    .v3,
+                    .v4 {
                         margin: 0 0 5px 0;
                         display: flex;
                         align-items: center;
 
-                        input[type="checkbox"]{
+                        input[type="checkbox"] {
                             margin: 0 5px 0 0;
                         }
 
-                        label{
+                        label {
                             @include span;
 
-                            &:hover{
+                            &:hover {
                                 cursor: pointer;
                             }
                         }
@@ -421,123 +455,153 @@ body {
             .right {
                 width: 406px;
 
-                #job{
+                #job {
                     width: 382px;
                     padding: 9px 12px;
+                    @include span;
                 }
             }
         }
 
-        &-experience{
+        &-experience {
             margin: 0 0 80px 0;
             border: none;
+
             &-title {
                 @include txt(#212223, 1.28571429em, 24px, L700, HN700, A700);
                 padding: 0 0 12px 0;
             }
-            
-            label[for="on-off"]{
+
+            label[for="on-off"] {
                 @include span;
 
-                &:hover{
+                &:hover {
                     cursor: pointer;
                 }
             }
 
-            #on-off:checked ~ .form{
+            #on-off:checked~.form {
                 display: none;
             }
 
-            .text{
+            .text {
                 @include span;
                 margin: 18px 0 0 0;
             }
 
-            .form{
+            .form {
                 margin: 15px 0 0 0;
 
-                .row1, .row2, .row3, .row5, .row6{
+                .row1,
+                .row2,
+                .row3,
+                .row5,
+                .row6 {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                 }
 
-                .row4, .row7, .row8, .row9, .row10{
+                .row4,
+                .row7,
+                .row8,
+                .row9,
+                .row10 {
                     display: flex;
                     justify-content: space-between;
                     align-items: flex-start;
                 }
 
-                .row1, .row2, .row3, .row4, .row5, .row6, .row7, .row8, .row9{
+                .row1,
+                .row2,
+                .row3,
+                .row4,
+                .row5,
+                .row6,
+                .row7,
+                .row8,
+                .row9 {
                     margin: 0 0 20px 0;
                 }
 
-                .row3{
-                    .left{
-                        &-text{
+                .row3 {
+                    .left {
+                        &-text {
                             width: 144px;
                         }
                     }
                 }
 
-                .row3, .row4, .row5, .row10{
-                    .left{
-                        &-text{
-                            &::after{
+                .row3,
+                .row4,
+                .row5,
+                .row10 {
+                    .left {
+                        &-text {
+                            &::after {
                                 display: none;
                             }
                         }
                     }
                 }
 
-                .row4, .row9, .row10{
-                    .right{
-                        .v1, .v2, .v3, .v4, .v5{
+                .row4,
+                .row9,
+                .row10 {
+                    .right {
+
+                        .v1,
+                        .v2,
+                        .v3,
+                        .v4,
+                        .v5 {
                             display: flex;
                             align-items: center;
                             margin: 0 0 10px 0;
-    
-                            input[type="radio"]{
+
+                            input[type="radio"] {
                                 margin: 0 5px 0 0;
                             }
-    
-                            label{
+
+                            label {
                                 @include span;
-                                &:hover{
+
+                                &:hover {
                                     cursor: pointer;
                                 }
                             }
 
                         }
-                        textarea{
+
+                        textarea {
                             @include span;
                             width: 438px;
                             height: 78px;
-                            padding: 10px 12px; 
+                            padding: 10px 12px;
                         }
                     }
                 }
 
-                label[for="working"]{
+                label[for="working"] {
                     @include span;
 
-                    &:hover{
+                    &:hover {
                         cursor: pointer;
                     }
-                }   
+                }
 
-                #working{
+                #working {
                     margin: 0 0 20px 40%;
                 }
 
-                #working:checked ~ .row8 {
+                #working:checked~.row8 {
                     display: none;
                 }
 
-                .left{
+                .left {
                     &-text {
                         @include span;
-    
+
                         &::after {
                             content: "*";
                             color: #f07d00;
@@ -547,50 +611,69 @@ body {
                         }
                     }
                 }
+
                 .right {
                     width: 406px;
-    
-                    #company, #city, #sphere, #site, #job{
+
+                    #company,
+                    #city,
+                    #sphere,
+                    #site,
+                    #job {
                         width: 382px;
                         padding: 9px 12px;
+                        @include span;
                     }
                 }
             }
         }
 
-        &-qualification{
+        &-qualification {
             border: none;
             margin: 0 0 40px 0;
 
-            .row1, .row2, .row3, .row4{
+            .row1,
+            .row2,
+            .row3,
+            .row4 {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
             }
 
-            .row5, .row6{
+            .row5,
+            .row6 {
                 display: flex;
                 justify-content: space-between;
                 align-items: flex-start;
             }
 
-            .row2, .row3, .row4, .row5, .row6{
+            .row2,
+            .row3,
+            .row4,
+            .row5,
+            .row6 {
                 margin: 0 0 20px 0;
             }
 
-            .row5{
-                .right{
-                    .v1, .v2, .v3, .v4{
+            .row5 {
+                .right {
+
+                    .v1,
+                    .v2,
+                    .v3,
+                    .v4 {
                         margin: 0 0 10px 0;
-                        label{
+
+                        label {
                             @include span;
                         }
                     }
                 }
             }
 
-            .row6{
-                .right{
+            .row6 {
+                .right {
                     display: flex;
                     align-items: flex-start;
                 }
@@ -601,27 +684,29 @@ body {
                 padding: 0 0 24px 0;
             }
 
-            #add{
+            #add {
                 display: none;
             }
 
-            #add:checked ~ label[for="add"]{
+            #add:checked~label[for="add"] {
                 display: none;
             }
 
-            #add:checked ~ .form-2{
+            #add:checked~.form-2 {
                 display: block;
             }
 
-            .form-2{
+            .form-2 {
                 display: none;
             }
-            
-            .form-2{
+
+            .form-2 {
                 margin: 40px 0 0 0;
-                .row1{
+
+                .row1 {
                     margin: 0 0 20px 0;
-                    .right{
+
+                    .right {
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
@@ -629,42 +714,45 @@ body {
                 }
             }
 
-            label[for="add"]{
+            label[for="add"] {
                 margin: 10px 0 0 35%;
                 display: flex;
                 align-self: center;
                 @include span;
                 color: #0055D2;
-                &:nth-child(2){
+
+                &:nth-child(2) {
                     margin: 0;
                 }
+
                 &::before {
                     content: url(../img/plus.svg);
                     margin: 0 5px 0 0;
                 }
 
-                &:hover{
+                &:hover {
                     cursor: pointer;
                 }
             }
 
-            .delete{
-                &::before{
+            .delete {
+                &::before {
                     display: none;
                 }
             }
-            
-            .row4, .row5{
-                .left{
-                    &-text{
-                        &::after{
+
+            .row4,
+            .row5 {
+                .left {
+                    &-text {
+                        &::after {
                             display: none;
                         }
                     }
                 }
             }
 
-            .left{
+            .left {
                 &-text {
                     @include span;
 
@@ -677,43 +765,49 @@ body {
                     }
                 }
             }
+
             .right {
                 width: 406px;
 
-                #level, #school, #spec{
+                #level,
+                #school,
+                #spec {
                     width: 382px;
                     padding: 6px 12px;
+                    @include span;
                 }
 
-                #city{
+                #city {
                     width: 191px;
                     padding: 6px 12px;
+                    @include span;
                 }
             }
         }
 
-        &-skills{
+        &-skills {
             border: none;
             margin: 0 0 40px 0;
 
-            img{
+            img {
                 margin: 0 15px 0 0;
             }
 
-            .title{
+            .title {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
 
-                &-text{
-                    h2{
+                &-text {
+                    h2 {
                         @include span;
                         font-size: 24px;
                         font-weight: 700;
                         margin: 0;
                         padding: 0;
                     }
-                    p{
+
+                    p {
                         @include span;
                         padding: 0;
                         margin: 0;
@@ -721,43 +815,46 @@ body {
                 }
             }
 
-            #skills{
+            #skills {
                 display: none;
             }
 
-            #skills:checked ~ label{
+            #skills:checked~label {
                 display: none;
             }
 
-            .form-3{
+            .form-3 {
                 display: none;
             }
 
-            #skills:checked ~ .form-3{
+            #skills:checked~.form-3 {
                 display: block;
             }
 
-            .row1{
+            .row1 {
                 margin: 20px 0 0 0;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                .left{
+
+                .left {
                     &-text {
                         @include span;
                     }
                 }
+
                 .right {
                     width: 406px;
-    
-                    #skill{
+
+                    #skill {
                         width: 382px;
                         padding: 6px 12px;
+                        @include span;
                     }
                 }
             }
-            
-            label[for="skills"]{
+
+            label[for="skills"] {
                 margin: 10px 0 0 75px;
                 display: flex;
                 align-self: center;
@@ -769,33 +866,35 @@ body {
                     margin: 0 5px 0 0;
                 }
 
-                &:hover{
+                &:hover {
                     cursor: pointer;
                 }
             }
         }
 
-        &-about{
+        &-about {
             border: none;
             margin: 0 0 40px 0;
-            img{
+
+            img {
                 margin: 0 15px 0 0;
             }
 
-            .title{
+            .title {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
 
-                &-text{
-                    h2{
+                &-text {
+                    h2 {
                         @include span;
                         font-size: 24px;
                         font-weight: 700;
                         margin: 0;
                         padding: 0;
                     }
-                    p{
+
+                    p {
                         @include span;
                         padding: 0;
                         margin: 0;
@@ -803,23 +902,23 @@ body {
                 }
             }
 
-            #about{
+            #about {
                 display: none;
             }
 
-            .form-4{
+            .form-4 {
                 display: none;
             }
 
-            #about:checked ~ .form-4{
+            #about:checked~.form-4 {
                 display: block;
             }
 
-            #about:checked ~ label{
+            #about:checked~label {
                 display: none;
             }
 
-            label[for="about"]{
+            label[for="about"] {
                 margin: 10px 0 0 75px;
                 display: flex;
                 align-self: center;
@@ -831,44 +930,49 @@ body {
                     margin: 0 5px 0 0;
                 }
 
-                &:hover{
+                &:hover {
                     cursor: pointer;
                 }
             }
 
-            .form-4{
+            .form-4 {
                 margin: 20px 0 40px 0;
-                .row1, .row2{
+
+                .row1,
+                .row2 {
                     margin: 0 0 20px 0;
                 }
 
-                .row1, .row2, .row3{
+                .row1,
+                .row2,
+                .row3 {
                     display: flex;
                     justify-content: space-between;
                     align-items: flex-start;
-                    .left{
-                        &-text{
+
+                    .left {
+                        &-text {
                             @include span;
                         }
                     }
 
-                    .right{
+                    .right {
                         width: 406px;
 
                         input[type="radio"],
-                        input[type="checkbox"]{
+                        input[type="checkbox"] {
                             margin: 0 5px 0 0;
                         }
 
-                        label{
+                        label {
                             @include span;
 
-                            &:hover{
+                            &:hover {
                                 cursor: pointer;
                             }
                         }
 
-                        #about-you{
+                        #about-you {
                             @include span;
                             width: 382px;
                             padding: 6px 12px;
@@ -879,14 +983,15 @@ body {
             }
         }
 
-        &-also{
+        &-also {
             border: none;
             display: flex;
             flex-wrap: wrap;
-            
-            .title{
+
+            .title {
                 width: 100%;
-                h2{
+
+                h2 {
                     @include span;
                     font-size: 24px;
                     font-weight: 700;
@@ -895,11 +1000,11 @@ body {
                 }
             }
 
-            input[type="checkbox"]{
+            input[type="checkbox"] {
                 display: none;
             }
-            
-            label{
+
+            label {
                 margin: 0 10px 0 0;
                 display: flex;
                 align-self: center;
@@ -911,36 +1016,45 @@ body {
                     margin: 0 5px 0 0;
                 }
 
-                &:hover{
+                &:hover {
                     cursor: pointer;
                 }
-            
-                &:last-child{
+
+                &:last-child {
                     display: block;
                 }
             }
 
-            .form-5{
+            .form-5 {
                 display: none;
             }
 
-            .form-6{
+            .form-6 {
                 display: none;
             }
 
-            #courses:checked ~ #courses-f{
+            .form-7 {
+                display: none;
+            }
+
+            .form-8 {
+                display: none;
+            }
+
+            #courses:checked~#courses-f {
                 display: block;
                 margin: 30px 0 0 0;
             }
 
-            #courses:checked ~ label[for="courses"]{
+            #courses:checked~label[for="courses"] {
                 display: none;
             }
 
-            .form-5{
+            .form-5 {
                 width: 100%;
                 padding: 0 0 20px 0;
-                h2{
+
+                h2 {
                     @include span;
                     font-size: 24px;
                     font-weight: 700;
@@ -948,83 +1062,92 @@ body {
                     padding: 0;
                 }
 
-                .row1, .row2, .row3{
+                .row1,
+                .row2,
+                .row3 {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                 }
 
-                .row4{
+                .row4 {
                     display: flex;
                     justify-content: space-between;
                 }
 
-                .row1, .row2, .row3{
+                .row1,
+                .row2,
+                .row3 {
                     margin: 0 0 20px 0;
                 }
 
-                .row2, .row3, .row4{
-                    .left{
-                    &-text{
-                        &::after{
-                            display: none;
-                        }
-                    }
-                }
-                }
-
-                    .left{
-                        &-text{
-                            @include span;
-
+                .row2,
+                .row3,
+                .row4 {
+                    .left {
+                        &-text {
                             &::after {
-                                content: "*";
-                                color: #f07d00;
-                                display: inline-block;
-                                vertical-align: top;
-                                margin-left: 3px;
-                            }
-                        }
-                    }
-
-                    .right{
-                        display: flex;
-                            width: 410px;
-            
-                            #city, #org, #year{
-                                width: 382px;
-                                padding: 6px 12px;
-                                @include span;
-                            }
-
-                        #course{
-                            width: 328px;
-                            padding: 6px 12px;
-                            margin: 0 10px 0 0;
-                            @include span;
-                        }
-
-                        label{
-                            &::before{
                                 display: none;
                             }
                         }
                     }
+                }
+
+                .left {
+                    &-text {
+                        @include span;
+
+                        &::after {
+                            content: "*";
+                            color: #f07d00;
+                            display: inline-block;
+                            vertical-align: top;
+                            margin-left: 3px;
+                        }
+                    }
+                }
+
+                .right {
+                    display: flex;
+                    width: 410px;
+
+                    #city,
+                    #org,
+                    #year {
+                        width: 382px;
+                        padding: 6px 12px;
+                        @include span;
+                    }
+
+                    #course {
+                        width: 328px;
+                        padding: 6px 12px;
+                        margin: 0 10px 0 0;
+                        @include span;
+                    }
+
+                    label {
+                        &::before {
+                            display: none;
+                        }
+                    }
+                }
             }
 
 
-            #portfolio:checked ~ #portfolio-f{
+            #portfolio:checked~#portfolio-f {
                 display: block;
                 margin: 30px 0 0 0;
             }
 
-            #portfolio:checked ~ label[for="portfolio"]{
+            #portfolio:checked~label[for="portfolio"] {
                 display: none;
             }
 
-            .form-6{
+            .form-6 {
                 margin: 20px 0 0 0;
-                h2{
+
+                h2 {
                     @include span;
                     font-size: 24px;
                     font-weight: 700;
@@ -1032,11 +1155,11 @@ body {
                     padding: 0;
                 }
 
-                #add-link{
+                #add-link {
                     display: none;
                 }
 
-                .block{
+                .block {
                     width: 100%;
                     display: flex;
                     flex-wrap: wrap;
@@ -1044,22 +1167,23 @@ body {
                     padding: 36px 0;
                     border: 1px dashed #cccdce;
 
-                    &-title{
+                    &-title {
                         width: 100%;
                         text-align: center;
                         @include span;
                         margin: 0 0 10px 0;
                     }
 
-                    &-btn{
+                    &-btn {
                         display: flex;
-                        input[type="file"]{
+
+                        input[type="file"] {
                             display: none;
                         }
 
                         label[for="add-file-2"],
-                        label[for="add-link"]{
-                            &::before{
+                        label[for="add-link"] {
+                            &::before {
                                 display: none;
                             }
 
@@ -1069,7 +1193,215 @@ body {
                         }
                     }
                 }
+
+                .form-link {
+                    display: none;
+                }
+
+                #add-link:checked~.form-link {
+                    display: block;
+                }
+
+                .form-link {
+
+                    margin: 20px 0 0 0;
+
+                    .row1 {
+                        margin: 0 0 20px 0;
+                    }
+
+                    .row1,
+                    .row2 {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .left {
+                            &-text {
+                                @include span;
+                            }
+                        }
+
+                        .right {
+                            width: 406px;
+                            display: flex;
+                            align-items: center;
+
+                            #descrip {
+                                width: 382px;
+                                padding: 6px 12px;
+                                @include span;
+                            }
+
+                            #link {
+                                width: 363px;
+                                padding: 9px 12px;
+                                margin: 0 10px 0 0;
+                                @include span;
+                            }
+
+                            label[for="add-link"] {
+                                &::before {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+
+                    .row2 {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                    }
+                }
             }
+
+            #car:checked~#car-f {
+                display: block;
+            }
+
+            #car:checked~label[for="car"] {
+                display: none;
+            }
+
+            .form-7 {
+                margin: 40px 0 0 0;
+                padding: 0 0 40px 0;
+
+                h2 {
+                    @include span;
+                    font-size: 24px;
+                    font-weight: 700;
+                    margin: 0 0 15px 0;
+                    padding: 0;
+                }
+
+                span {
+                    display: block;
+                    @include span;
+                }
+
+                .category {
+                    margin: 10px 0 0 0;
+
+                    tr {
+                        margin: 0 0 15px 0;
+                        display: flex;
+                        align-items: center;
+
+                        td {
+                            width: 50px;
+                            display: flex;
+                            align-items: center;
+
+                            input[type="checkbox"] {
+                                display: block;
+                                margin: 0 5px 0 0;
+                            }
+
+                            label {
+                                @include span;
+
+                                &::before {
+                                    display: none;
+                                }
+                            }
+                        }
+
+                        &:last-child {
+                            margin: 0;
+                        }
+                    }
+                }
+
+                .your-car {
+                    display: flex;
+                    align-items: center;
+                    margin: 10px 0 0 0;
+
+                    #your-car {
+                        display: block;
+                        margin: 0 5px 0 0;
+                    }
+
+                    label[for="your-car"] {
+                        @include span;
+
+                        &::before {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            #social:checked~#social-f {
+                display: block;
+            }
+
+            #social:checked~label[for="social"] {
+                display: none;
+            }
+
+            .form-8 {
+                width: 100%;
+                margin: 40px 0 0 0;
+
+                h2 {
+                    @include span;
+                    font-size: 24px;
+                    font-weight: 700;
+                    margin: 0 0 15px 0;
+                    padding: 0;
+                }
+
+                .row1,
+                .row2,
+                .row3,
+                .row4,
+                .row5 {
+                    margin: 0 0 20px 0;
+                }
+
+                .row1,
+                .row2,
+                .row3,
+                .row4,
+                .row5,
+                .row6 {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .left {
+                        &-text {
+                            @include span;
+                        }
+                    }
+
+                    .right {
+                        width: 406px;
+
+                        #vk,
+                        #fb,
+                        #in,
+                        #my-circle,
+                        #tw,
+                        #skype {
+                            width: 382px;
+                            padding: 6px 12px;
+                            @include span;
+                        }
+                    }
+                }
+            }
+        }
+
+        button[type="submit"] {
+            @include span;
+            background-color: #ffcd28;
+            padding: 10px 24px;
+            border: none;
+            margin: 40px 0 0 0;
         }
     }
 }
