@@ -404,6 +404,10 @@ body {
   left: 0;
 }
 
+.main-form-profile .right .back label[for="file"]:hover {
+  cursor: pointer;
+}
+
 .main-form-job {
   border: none;
   margin: 0 0 80px 0;
