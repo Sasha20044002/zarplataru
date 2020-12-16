@@ -691,5 +691,322 @@ body {
                 }
             }
         }
+
+        &-skills{
+            border: none;
+            margin: 0 0 40px 0;
+
+            img{
+                margin: 0 15px 0 0;
+            }
+
+            .title{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &-text{
+                    h2{
+                        @include span;
+                        font-size: 24px;
+                        font-weight: 700;
+                        margin: 0;
+                        padding: 0;
+                    }
+                    p{
+                        @include span;
+                        padding: 0;
+                        margin: 0;
+                    }
+                }
+            }
+
+            #skills{
+                display: none;
+            }
+
+            #skills:checked ~ label{
+                display: none;
+            }
+
+            .form-3{
+                display: none;
+            }
+
+            #skills:checked ~ .form-3{
+                display: block;
+            }
+
+            .row1{
+                margin: 20px 0 0 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .left{
+                    &-text {
+                        @include span;
+                    }
+                }
+                .right {
+                    width: 406px;
+    
+                    #skill{
+                        width: 382px;
+                        padding: 6px 12px;
+                    }
+                }
+            }
+            
+            label[for="skills"]{
+                margin: 10px 0 0 75px;
+                display: flex;
+                align-self: center;
+                @include span;
+                color: #0055D2;
+
+                &::before {
+                    content: url(../img/plus.svg);
+                    margin: 0 5px 0 0;
+                }
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &-about{
+            border: none;
+            margin: 0 0 40px 0;
+            img{
+                margin: 0 15px 0 0;
+            }
+
+            .title{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &-text{
+                    h2{
+                        @include span;
+                        font-size: 24px;
+                        font-weight: 700;
+                        margin: 0;
+                        padding: 0;
+                    }
+                    p{
+                        @include span;
+                        padding: 0;
+                        margin: 0;
+                    }
+                }
+            }
+
+            #about{
+                display: none;
+            }
+
+            .form-4{
+                display: none;
+            }
+
+            #about:checked ~ .form-4{
+                display: block;
+            }
+
+            #about:checked ~ label{
+                display: none;
+            }
+
+            label[for="about"]{
+                margin: 10px 0 0 75px;
+                display: flex;
+                align-self: center;
+                @include span;
+                color: #0055D2;
+
+                &::before {
+                    content: url(../img/plus.svg);
+                    margin: 0 5px 0 0;
+                }
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+
+            .form-4{
+                margin: 20px 0 40px 0;
+                .row1, .row2{
+                    margin: 0 0 20px 0;
+                }
+
+                .row1, .row2, .row3{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    .left{
+                        &-text{
+                            @include span;
+                        }
+                    }
+
+                    .right{
+                        width: 406px;
+
+                        input[type="radio"],
+                        input[type="checkbox"]{
+                            margin: 0 5px 0 0;
+                        }
+
+                        label{
+                            @include span;
+
+                            &:hover{
+                                cursor: pointer;
+                            }
+                        }
+
+                        #about-you{
+                            @include span;
+                            width: 382px;
+                            padding: 6px 12px;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        &-also{
+            border: none;
+            display: flex;
+            flex-wrap: wrap;
+            
+            .title{
+                width: 100%;
+                h2{
+                    @include span;
+                    font-size: 24px;
+                    font-weight: 700;
+                    margin: 0 0 15px 0;
+                    padding: 0;
+                }
+            }
+
+            input[type="checkbox"]{
+                display: none;
+            }
+            
+            label{
+                margin: 0 10px 0 0;
+                display: flex;
+                align-self: center;
+                @include span;
+                color: #0055D2;
+
+                &::before {
+                    content: url(../img/plus.svg);
+                    margin: 0 5px 0 0;
+                }
+
+                &:hover{
+                    cursor: pointer;
+                }
+            
+                &:last-child{
+                    display: block;
+                }
+            }
+
+            .form-5{
+                display: none;
+            }
+
+            #courses:checked ~ #courses-f{
+                display: block;
+                margin: 30px 0 0 0;
+            }
+
+            #courses:checked ~ label[for="courses"]{
+                display: none;
+            }
+
+            .form-5{
+                width: 100%;
+                padding: 0 0 20px 0;
+                h2{
+                    @include span;
+                    font-size: 24px;
+                    font-weight: 700;
+                    margin: 0 0 15px 0;
+                    padding: 0;
+                }
+
+                .row1, .row2, .row3{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                .row4{
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .row1, .row2, .row3{
+                    margin: 0 0 20px 0;
+                }
+
+                .row2, .row3, .row4{
+                    .left{
+                    &-text{
+                        &::after{
+                            display: none;
+                        }
+                    }
+                }
+                }
+
+                    .left{
+                        &-text{
+                            @include span;
+
+                            &::after {
+                                content: "*";
+                                color: #f07d00;
+                                display: inline-block;
+                                vertical-align: top;
+                                margin-left: 3px;
+                            }
+                        }
+                    }
+
+                    .right{
+                        display: flex;
+                            width: 410px;
+            
+                            #city, #org, #year{
+                                width: 382px;
+                                padding: 6px 12px;
+                                @include span;
+                            }
+
+                        #course{
+                            width: 328px;
+                            padding: 6px 12px;
+                            margin: 0 10px 0 0;
+                            @include span;
+                        }
+
+                        label{
+                            &::before{
+                                display: none;
+                            }
+                        }
+                    }
+            }
+        }
     }
 }

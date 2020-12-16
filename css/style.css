@@ -893,3 +893,408 @@ body {
   width: 191px;
   padding: 6px 12px;
 }
+
+.main-form-skills {
+  border: none;
+  margin: 0 0 40px 0;
+}
+
+.main-form-skills img {
+  margin: 0 15px 0 0;
+}
+
+.main-form-skills .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-form-skills .title-text h2 {
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.main-form-skills .title-text p {
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.main-form-skills #skills {
+  display: none;
+}
+
+.main-form-skills #skills:checked ~ label {
+  display: none;
+}
+
+.main-form-skills .form-3 {
+  display: none;
+}
+
+.main-form-skills #skills:checked ~ .form-3 {
+  display: block;
+}
+
+.main-form-skills .row1 {
+  margin: 20px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-form-skills .row1 .left-text {
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+}
+
+.main-form-skills .row1 .right {
+  width: 406px;
+}
+
+.main-form-skills .row1 .right #skill {
+  width: 382px;
+  padding: 6px 12px;
+}
+
+.main-form-skills label[for="skills"] {
+  margin: 10px 0 0 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+  color: #0055D2;
+}
+
+.main-form-skills label[for="skills"]::before {
+  content: url(../img/plus.svg);
+  margin: 0 5px 0 0;
+}
+
+.main-form-skills label[for="skills"]:hover {
+  cursor: pointer;
+}
+
+.main-form-about {
+  border: none;
+  margin: 0 0 40px 0;
+}
+
+.main-form-about img {
+  margin: 0 15px 0 0;
+}
+
+.main-form-about .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-form-about .title-text h2 {
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.main-form-about .title-text p {
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.main-form-about #about {
+  display: none;
+}
+
+.main-form-about .form-4 {
+  display: none;
+}
+
+.main-form-about #about:checked ~ .form-4 {
+  display: block;
+}
+
+.main-form-about #about:checked ~ label {
+  display: none;
+}
+
+.main-form-about label[for="about"] {
+  margin: 10px 0 0 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+  color: #0055D2;
+}
+
+.main-form-about label[for="about"]::before {
+  content: url(../img/plus.svg);
+  margin: 0 5px 0 0;
+}
+
+.main-form-about label[for="about"]:hover {
+  cursor: pointer;
+}
+
+.main-form-about .form-4 {
+  margin: 20px 0 40px 0;
+}
+
+.main-form-about .form-4 .row1, .main-form-about .form-4 .row2 {
+  margin: 0 0 20px 0;
+}
+
+.main-form-about .form-4 .row1, .main-form-about .form-4 .row2, .main-form-about .form-4 .row3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main-form-about .form-4 .row1 .left-text, .main-form-about .form-4 .row2 .left-text, .main-form-about .form-4 .row3 .left-text {
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+}
+
+.main-form-about .form-4 .row1 .right, .main-form-about .form-4 .row2 .right, .main-form-about .form-4 .row3 .right {
+  width: 406px;
+}
+
+.main-form-about .form-4 .row1 .right input[type="radio"],
+.main-form-about .form-4 .row1 .right input[type="checkbox"], .main-form-about .form-4 .row2 .right input[type="radio"],
+.main-form-about .form-4 .row2 .right input[type="checkbox"], .main-form-about .form-4 .row3 .right input[type="radio"],
+.main-form-about .form-4 .row3 .right input[type="checkbox"] {
+  margin: 0 5px 0 0;
+}
+
+.main-form-about .form-4 .row1 .right label, .main-form-about .form-4 .row2 .right label, .main-form-about .form-4 .row3 .right label {
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+}
+
+.main-form-about .form-4 .row1 .right label:hover, .main-form-about .form-4 .row2 .right label:hover, .main-form-about .form-4 .row3 .right label:hover {
+  cursor: pointer;
+}
+
+.main-form-about .form-4 .row1 .right #about-you, .main-form-about .form-4 .row2 .right #about-you, .main-form-about .form-4 .row3 .right #about-you {
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+  width: 382px;
+  padding: 6px 12px;
+}
+
+.main-form-also {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-form-also .title {
+  width: 100%;
+}
+
+.main-form-also .title h2 {
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+
+.main-form-also input[type="checkbox"] {
+  display: none;
+}
+
+.main-form-also label {
+  margin: 0 10px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+  color: #0055D2;
+}
+
+.main-form-also label::before {
+  content: url(../img/plus.svg);
+  margin: 0 5px 0 0;
+}
+
+.main-form-also label:hover {
+  cursor: pointer;
+}
+
+.main-form-also label:last-child {
+  display: block;
+}
+
+.main-form-also .form-5 {
+  display: none;
+}
+
+.main-form-also #courses:checked ~ #courses-f {
+  display: block;
+  margin: 30px 0 0 0;
+}
+
+.main-form-also #courses:checked ~ label[for="courses"] {
+  display: none;
+}
+
+.main-form-also .form-5 {
+  width: 100%;
+  padding: 0 0 20px 0;
+}
+
+.main-form-also .form-5 h2 {
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+
+.main-form-also .form-5 .row1, .main-form-also .form-5 .row2, .main-form-also .form-5 .row3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-form-also .form-5 .row4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-form-also .form-5 .row1, .main-form-also .form-5 .row2, .main-form-also .form-5 .row3 {
+  margin: 0 0 20px 0;
+}
+
+.main-form-also .form-5 .row2 .left-text::after, .main-form-also .form-5 .row3 .left-text::after, .main-form-also .form-5 .row4 .left-text::after {
+  display: none;
+}
+
+.main-form-also .form-5 .left-text {
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+}
+
+.main-form-also .form-5 .left-text::after {
+  content: "*";
+  color: #f07d00;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 3px;
+}
+
+.main-form-also .form-5 .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 410px;
+}
+
+.main-form-also .form-5 .right #city, .main-form-also .form-5 .right #org, .main-form-also .form-5 .right #year {
+  width: 382px;
+  padding: 6px 12px;
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+}
+
+.main-form-also .form-5 .right #course {
+  width: 328px;
+  padding: 6px 12px;
+  margin: 0 10px 0 0;
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+}
+
+.main-form-also .form-5 .right label::before {
+  display: none;
+}
