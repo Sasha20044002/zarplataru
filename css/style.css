@@ -1200,6 +1200,10 @@ body {
   display: none;
 }
 
+.main-form-also .form-6 {
+  display: none;
+}
+
 .main-form-also #courses:checked ~ #courses-f {
   display: block;
   margin: 30px 0 0 0;
@@ -1296,5 +1300,82 @@ body {
 }
 
 .main-form-also .form-5 .right label::before {
+  display: none;
+}
+
+.main-form-also #portfolio:checked ~ #portfolio-f {
+  display: block;
+  margin: 30px 0 0 0;
+}
+
+.main-form-also #portfolio:checked ~ label[for="portfolio"] {
+  display: none;
+}
+
+.main-form-also .form-6 {
+  margin: 20px 0 0 0;
+}
+
+.main-form-also .form-6 h2 {
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+
+.main-form-also .form-6 #add-link {
+  display: none;
+}
+
+.main-form-also .form-6 .block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 36px 0;
+  border: 1px dashed #cccdce;
+}
+
+.main-form-also .form-6 .block-title {
+  width: 100%;
+  text-align: center;
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+  margin: 0 0 10px 0;
+}
+
+.main-form-also .form-6 .block-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-form-also .form-6 .block-btn input[type="file"] {
+  display: none;
+}
+
+.main-form-also .form-6 .block-btn label[for="add-file-2"],
+.main-form-also .form-6 .block-btn label[for="add-link"] {
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+  padding: 6px 24px;
+  border: 1px solid #cccdce;
+}
+
+.main-form-also .form-6 .block-btn label[for="add-file-2"]::before,
+.main-form-also .form-6 .block-btn label[for="add-link"]::before {
   display: none;
 }

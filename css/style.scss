@@ -924,6 +924,10 @@ body {
                 display: none;
             }
 
+            .form-6{
+                display: none;
+            }
+
             #courses:checked ~ #courses-f{
                 display: block;
                 margin: 30px 0 0 0;
@@ -1006,6 +1010,65 @@ body {
                             }
                         }
                     }
+            }
+
+
+            #portfolio:checked ~ #portfolio-f{
+                display: block;
+                margin: 30px 0 0 0;
+            }
+
+            #portfolio:checked ~ label[for="portfolio"]{
+                display: none;
+            }
+
+            .form-6{
+                margin: 20px 0 0 0;
+                h2{
+                    @include span;
+                    font-size: 24px;
+                    font-weight: 700;
+                    margin: 0 0 15px 0;
+                    padding: 0;
+                }
+
+                #add-link{
+                    display: none;
+                }
+
+                .block{
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    padding: 36px 0;
+                    border: 1px dashed #cccdce;
+
+                    &-title{
+                        width: 100%;
+                        text-align: center;
+                        @include span;
+                        margin: 0 0 10px 0;
+                    }
+
+                    &-btn{
+                        display: flex;
+                        input[type="file"]{
+                            display: none;
+                        }
+
+                        label[for="add-file-2"],
+                        label[for="add-link"]{
+                            &::before{
+                                display: none;
+                            }
+
+                            @include span;
+                            padding: 6px 24px;
+                            border: 1px solid #cccdce;
+                        }
+                    }
+                }
             }
         }
     }
