@@ -1,0 +1,611 @@
+@font-face {
+  font-family: HN400;
+  src: url(../fonts/HelveticaNeueCyr-Roman.woff2);
+}
+
+@font-face {
+  font-family: L400;
+  src: url(../fonts/Lato-Regular.woff2);
+}
+
+@font-face {
+  font-family: A400;
+  src: url(../fonts/ArialMT.woff2);
+}
+
+@font-face {
+  font-family: HN700;
+  src: url(../fonts/HelveticaNeueCyr-Bold.woff2);
+}
+
+@font-face {
+  font-family: L700;
+  src: url(../fonts/Lato-Bold.woff2);
+}
+
+@font-face {
+  font-family: A700;
+  src: url(../fonts/ArialNarrow-Bold.woff2);
+}
+
+body {
+  line-height: normal;
+}
+
+.container {
+  width: 84.5833%;
+  margin: 0 auto;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-form {
+  width: 647px;
+}
+
+.main-form-fields {
+  width: 100%;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 20px 0;
+}
+
+.main-form-fields .left-text {
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+}
+
+.main-form-fields .right {
+  min-height: 126px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-form-fields .right .row1 label,
+.main-form-fields .right .row2 label,
+.main-form-fields .right .row3 label {
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+  margin: 0 0 0 10px;
+}
+
+.main-form-fields .right .row1 a,
+.main-form-fields .right .row2 a,
+.main-form-fields .right .row3 a {
+  display: block;
+  margin: 0 0 0 30px;
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+  color: #0055D2;
+  text-decoration: none;
+}
+
+.main-form-profile {
+  border: none;
+  width: 100%;
+  margin: 0 0 80px 0;
+}
+
+.main-form-profile .row2,
+.main-form-profile .row3,
+.main-form-profile .row4,
+.main-form-profile .row5,
+.main-form-profile .row7,
+.main-form-profile .row8,
+.main-form-profile .row10 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-form-profile .row1,
+.main-form-profile .row5,
+.main-form-profile .row6,
+.main-form-profile .row9 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-form-profile .row1,
+.main-form-profile .row2,
+.main-form-profile .row3,
+.main-form-profile .row5,
+.main-form-profile .row6,
+.main-form-profile .row7,
+.main-form-profile .row8,
+.main-form-profile .row9 {
+  margin: 0 0 20px 0;
+}
+
+.main-form-profile .row4 {
+  margin: 0 0 30px 0;
+}
+
+.main-form-profile .row4 .right input[type="text"] {
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+}
+
+.main-form-profile .row4 .left-text::after,
+.main-form-profile .row10 .left-text::after {
+  display: none;
+}
+
+.main-form-profile .row5 .right {
+  width: 406px;
+}
+
+.main-form-profile .row5 .right #day,
+.main-form-profile .row5 .right #month {
+  margin: 0 10px 0 0;
+}
+
+.main-form-profile .row6 .right .male,
+.main-form-profile .row6 .right .female {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-form-profile .row6 .right .male input[name="sex"],
+.main-form-profile .row6 .right .female input[name="sex"] {
+  margin: 0 5px 0 0;
+}
+
+.main-form-profile .row6 .right .male label,
+.main-form-profile .row6 .right .female label {
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+}
+
+.main-form-profile .row6 .right .male label:hover,
+.main-form-profile .row6 .right .female label:hover {
+  cursor: pointer;
+}
+
+.main-form-profile .row6 .right .male {
+  margin: 0 0 10px 0;
+}
+
+.main-form-profile .row9 .right #tel {
+  margin: 0 0 10px 0;
+}
+
+.main-form-profile .row9 .right .add-comment,
+.main-form-profile .row9 .right .add-tel,
+.main-form-profile .row9 .right .add-comment-2,
+.main-form-profile .row9 .right .add-tel-2 {
+  margin: 0 0 10px 0;
+}
+
+.main-form-profile .row9 .right .add-comment input[type="checkbox"],
+.main-form-profile .row9 .right .add-tel input[type="checkbox"],
+.main-form-profile .row9 .right .add-comment-2 input[type="checkbox"],
+.main-form-profile .row9 .right .add-tel-2 input[type="checkbox"] {
+  display: none;
+}
+
+.main-form-profile .row9 .right .add-comment #add-comm:checked ~ textarea,
+.main-form-profile .row9 .right .add-tel #add-comm:checked ~ textarea,
+.main-form-profile .row9 .right .add-comment-2 #add-comm:checked ~ textarea,
+.main-form-profile .row9 .right .add-tel-2 #add-comm:checked ~ textarea {
+  display: block;
+}
+
+.main-form-profile .row9 .right .add-comment #add-comm:checked ~ label,
+.main-form-profile .row9 .right .add-tel #add-comm:checked ~ label,
+.main-form-profile .row9 .right .add-comment-2 #add-comm:checked ~ label,
+.main-form-profile .row9 .right .add-tel-2 #add-comm:checked ~ label {
+  display: none;
+}
+
+.main-form-profile .row9 .right .add-comment #add-comm-2:checked ~ textarea,
+.main-form-profile .row9 .right .add-tel #add-comm-2:checked ~ textarea,
+.main-form-profile .row9 .right .add-comment-2 #add-comm-2:checked ~ textarea,
+.main-form-profile .row9 .right .add-tel-2 #add-comm-2:checked ~ textarea {
+  display: block;
+}
+
+.main-form-profile .row9 .right .add-comment #add-comm-2:checked ~ label,
+.main-form-profile .row9 .right .add-tel #add-comm-2:checked ~ label,
+.main-form-profile .row9 .right .add-comment-2 #add-comm-2:checked ~ label,
+.main-form-profile .row9 .right .add-tel-2 #add-comm-2:checked ~ label {
+  display: none;
+}
+
+.main-form-profile .row9 .right .add-comment #add-tel:checked ~ input[name="new-tel"],
+.main-form-profile .row9 .right .add-tel #add-tel:checked ~ input[name="new-tel"],
+.main-form-profile .row9 .right .add-comment-2 #add-tel:checked ~ input[name="new-tel"],
+.main-form-profile .row9 .right .add-tel-2 #add-tel:checked ~ input[name="new-tel"] {
+  display: block;
+}
+
+.main-form-profile .row9 .right .add-comment #add-tel:checked ~ label,
+.main-form-profile .row9 .right .add-tel #add-tel:checked ~ label,
+.main-form-profile .row9 .right .add-comment-2 #add-tel:checked ~ label,
+.main-form-profile .row9 .right .add-tel-2 #add-tel:checked ~ label {
+  display: none;
+}
+
+.main-form-profile .row9 .right .add-comment textarea,
+.main-form-profile .row9 .right .add-comment input[name="new-tel"],
+.main-form-profile .row9 .right .add-tel textarea,
+.main-form-profile .row9 .right .add-tel input[name="new-tel"],
+.main-form-profile .row9 .right .add-comment-2 textarea,
+.main-form-profile .row9 .right .add-comment-2 input[name="new-tel"],
+.main-form-profile .row9 .right .add-tel-2 textarea,
+.main-form-profile .row9 .right .add-tel-2 input[name="new-tel"] {
+  display: none;
+}
+
+.main-form-profile .row9 .right .add-comment label,
+.main-form-profile .row9 .right .add-tel label,
+.main-form-profile .row9 .right .add-comment-2 label,
+.main-form-profile .row9 .right .add-tel-2 label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+  color: #0055D2;
+}
+
+.main-form-profile .row9 .right .add-comment label:hover,
+.main-form-profile .row9 .right .add-tel label:hover,
+.main-form-profile .row9 .right .add-comment-2 label:hover,
+.main-form-profile .row9 .right .add-tel-2 label:hover {
+  cursor: pointer;
+}
+
+.main-form-profile .row9 .right .add-comment label::before,
+.main-form-profile .row9 .right .add-tel label::before,
+.main-form-profile .row9 .right .add-comment-2 label::before,
+.main-form-profile .row9 .right .add-tel-2 label::before {
+  content: url(../img/plus.svg);
+  margin: 0 5px 0 0;
+}
+
+.main-form-profile .row10 .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-form-profile .row10 .right #passport {
+  margin: 0 10px 0 0;
+}
+
+.main-form-profile .row10 .right .passport {
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+}
+
+.main-form-profile-title {
+  color: #212223;
+  line-height: 1.28571em;
+  font-size: 24px;
+  font-family: L700, HN700, A700, sans-serif;
+  padding: 0 0 24px 0;
+}
+
+.main-form-profile .left-text {
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+}
+
+.main-form-profile .left-text::after {
+  content: "*";
+  color: #f07d00;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 3px;
+}
+
+.main-form-profile .right {
+  width: 406px;
+}
+
+.main-form-profile .right #second,
+.main-form-profile .right #first,
+.main-form-profile .right #third,
+.main-form-profile .right #city,
+.main-form-profile .right #email {
+  width: 382px;
+  padding: 9px 12px;
+}
+
+.main-form-profile .right .back {
+  width: 240px;
+  height: 240px;
+  background-image: url(../img/profile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.main-form-profile .right .back input[type="file"] {
+  display: none;
+}
+
+.main-form-profile .right .back label[for="file"] {
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+  color: #fff;
+  background-color: #21222380;
+  text-align: center;
+  width: 100%;
+  padding: 15px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.main-form-job {
+  border: none;
+  margin: 0 0 80px 0;
+}
+
+.main-form-job-title {
+  color: #212223;
+  line-height: 1.28571em;
+  font-size: 24px;
+  font-family: L700, HN700, A700, sans-serif;
+  padding: 0 0 24px 0;
+}
+
+.main-form-job .row1, .main-form-job .row2, .main-form-job .row4, .main-form-job .row5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-form-job .row3, .main-form-job .row6, .main-form-job .row7, .main-form-job .row8 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main-form-job .row1, .main-form-job .row2, .main-form-job .row4, .main-form-job .row5, .main-form-job .row6, .main-form-job .row7 {
+  margin: 0 0 20px 0;
+}
+
+.main-form-job .row2 .left-text::after, .main-form-job .row3 .left-text::after, .main-form-job .row6 .left-text::after, .main-form-job .row7 .left-text::after, .main-form-job .row8 .left-text::after {
+  display: none;
+}
+
+.main-form-job .row3 .right .v1, .main-form-job .row3 .right .v2, .main-form-job .row3 .right .v3, .main-form-job .row3 .right .v4, .main-form-job .row3 .right .v5, .main-form-job .row6 .right .v1, .main-form-job .row6 .right .v2, .main-form-job .row6 .right .v3, .main-form-job .row6 .right .v4, .main-form-job .row6 .right .v5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 10px 0;
+}
+
+.main-form-job .row3 .right .v1 input[type="radio"], .main-form-job .row3 .right .v2 input[type="radio"], .main-form-job .row3 .right .v3 input[type="radio"], .main-form-job .row3 .right .v4 input[type="radio"], .main-form-job .row3 .right .v5 input[type="radio"], .main-form-job .row6 .right .v1 input[type="radio"], .main-form-job .row6 .right .v2 input[type="radio"], .main-form-job .row6 .right .v3 input[type="radio"], .main-form-job .row6 .right .v4 input[type="radio"], .main-form-job .row6 .right .v5 input[type="radio"] {
+  margin: 0 5px 0 0;
+}
+
+.main-form-job .row3 .right .v1 label, .main-form-job .row3 .right .v2 label, .main-form-job .row3 .right .v3 label, .main-form-job .row3 .right .v4 label, .main-form-job .row3 .right .v5 label, .main-form-job .row6 .right .v1 label, .main-form-job .row6 .right .v2 label, .main-form-job .row6 .right .v3 label, .main-form-job .row6 .right .v4 label, .main-form-job .row6 .right .v5 label {
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+}
+
+.main-form-job .row3 .right .v1 label:hover, .main-form-job .row3 .right .v2 label:hover, .main-form-job .row3 .right .v3 label:hover, .main-form-job .row3 .right .v4 label:hover, .main-form-job .row3 .right .v5 label:hover, .main-form-job .row6 .right .v1 label:hover, .main-form-job .row6 .right .v2 label:hover, .main-form-job .row6 .right .v3 label:hover, .main-form-job .row6 .right .v4 label:hover, .main-form-job .row6 .right .v5 label:hover {
+  cursor: pointer;
+}
+
+.main-form-job .row7 .right {
+  height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.main-form-job .row7 .right .v1, .main-form-job .row7 .right .v2, .main-form-job .row7 .right .v3, .main-form-job .row7 .right .v4, .main-form-job .row7 .right .v5 {
+  margin: 0 0 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-form-job .row7 .right .v1 input[type="checkbox"], .main-form-job .row7 .right .v2 input[type="checkbox"], .main-form-job .row7 .right .v3 input[type="checkbox"], .main-form-job .row7 .right .v4 input[type="checkbox"], .main-form-job .row7 .right .v5 input[type="checkbox"] {
+  margin: 0 5px 0 0;
+}
+
+.main-form-job .row7 .right .v1 label, .main-form-job .row7 .right .v2 label, .main-form-job .row7 .right .v3 label, .main-form-job .row7 .right .v4 label, .main-form-job .row7 .right .v5 label {
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+}
+
+.main-form-job .row7 .right .v1 label:hover, .main-form-job .row7 .right .v2 label:hover, .main-form-job .row7 .right .v3 label:hover, .main-form-job .row7 .right .v4 label:hover, .main-form-job .row7 .right .v5 label:hover {
+  cursor: pointer;
+}
+
+.main-form-job .row8 .right {
+  height: 54px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.main-form-job .row8 .right .v1, .main-form-job .row8 .right .v2, .main-form-job .row8 .right .v3, .main-form-job .row8 .right .v4 {
+  margin: 0 0 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-form-job .row8 .right .v1 input[type="checkbox"], .main-form-job .row8 .right .v2 input[type="checkbox"], .main-form-job .row8 .right .v3 input[type="checkbox"], .main-form-job .row8 .right .v4 input[type="checkbox"] {
+  margin: 0 5px 0 0;
+}
+
+.main-form-job .row8 .right .v1 label, .main-form-job .row8 .right .v2 label, .main-form-job .row8 .right .v3 label, .main-form-job .row8 .right .v4 label {
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+}
+
+.main-form-job .row8 .right .v1 label:hover, .main-form-job .row8 .right .v2 label:hover, .main-form-job .row8 .right .v3 label:hover, .main-form-job .row8 .right .v4 label:hover {
+  cursor: pointer;
+}
+
+.main-form-job .left-text {
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+}
+
+.main-form-job .left-text::after {
+  content: "*";
+  color: #f07d00;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 3px;
+}
+
+.main-form-job .right {
+  width: 406px;
+}
+
+.main-form-job .right #job {
+  width: 382px;
+  padding: 9px 12px;
+}
+
+.main-form-experience {
+  border: none;
+}
+
+.main-form-experience-title {
+  color: #212223;
+  line-height: 1.28571em;
+  font-size: 24px;
+  font-family: L700, HN700, A700, sans-serif;
+  padding: 0 0 12px 0;
+}
+
+.main-form-experience label[for="on-off"] {
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+}
+
+.main-form-experience label[for="on-off"]:hover {
+  cursor: pointer;
+}
+
+.main-form-experience .text {
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+  margin: 18px 0 0 0;
+}

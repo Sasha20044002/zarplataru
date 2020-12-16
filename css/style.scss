@@ -1,0 +1,452 @@
+@import 'needs.scss';
+@import 'fonts.scss';
+
+body {
+    line-height: normal;
+}
+
+.container {
+    width: 84.5833%;
+    margin: 0 auto;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+
+    &-form {
+        width: 647px;
+
+        &-fields {
+            width: 100%;
+            border: none;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 0 20px 0;
+
+            .left {
+                &-text {
+                    @include span;
+                }
+            }
+
+            .right {
+                min-height: 126px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .row1,
+                .row2,
+                .row3 {
+                    label {
+                        @include txt(#212223, normal, 15px, L400, HN400, A400);
+                        margin: 0 0 0 10px;
+                    }
+
+                    a {
+                        display: block;
+                        margin: 0 0 0 30px;
+                        @include span;
+                        color: #0055D2;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        &-profile {
+            border: none;
+            width: 100%;
+            margin: 0 0 80px 0;
+
+            .row2,
+            .row3,
+            .row4,
+            .row5,
+            .row7,
+            .row8,
+            .row10 {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .row1,
+            .row5,
+            .row6,
+            .row9 {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+            }
+
+            .row1,
+            .row2,
+            .row3,
+            .row5,
+            .row6,
+            .row7,
+            .row8,
+            .row9 {
+                margin: 0 0 20px 0;
+            }
+
+            .row4 {
+                margin: 0 0 30px 0;
+
+                .right {
+                    input[type="text"] {
+                        @include span;
+                    }
+                }
+            }
+
+            .row4,
+            .row10 {
+                .left {
+                    &-text {
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .row5 {
+                .right {
+                    width: 406px;
+
+                    #day,
+                    #month {
+                        margin: 0 10px 0 0;
+                    }
+                }
+            }
+
+            .row6 {
+                .right {
+
+                    .male,
+                    .female {
+                        display: flex;
+                        align-items: center;
+
+                        input[name="sex"] {
+                            margin: 0 5px 0 0;
+                        }
+
+                        label {
+                            @include span;
+
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                    .male {
+                        margin: 0 0 10px 0;
+                    }
+                }
+            }
+
+            .row9 {
+                .right {
+
+                    #tel {
+                        margin: 0 0 10px 0;
+                    }
+
+                    .add-comment,
+                    .add-tel,
+                    .add-comment-2,
+                    .add-tel-2 {
+
+                        margin: 0 0 10px 0;
+
+                        input[type="checkbox"] {
+                            display: none;
+                        }
+
+                        #add-comm:checked~textarea {
+                            display: block;
+                        }
+
+                        #add-comm:checked~label {
+                            display: none;
+                        }
+
+                        #add-comm-2:checked~textarea {
+                            display: block;
+                        }
+
+                        #add-comm-2:checked~label {
+                            display: none;
+                        }
+
+                        #add-tel:checked~input[name="new-tel"] {
+                            display: block;
+                        }
+
+                        #add-tel:checked~label {
+                            display: none;
+                        }
+
+
+                        textarea,
+                        input[name="new-tel"] {
+                            display: none;
+                        }
+
+                        label {
+                            display: flex;
+                            align-self: center;
+                            @include span;
+                            color: #0055D2;
+
+                            &:hover {
+                                cursor: pointer;
+                            }
+
+                            &::before {
+                                content: url(../img/plus.svg);
+                                margin: 0 5px 0 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .row10 {
+                .right {
+                    display: flex;
+                    align-items: center;
+
+                    #passport {
+                        margin: 0 10px 0 0;
+                    }
+
+                    .passport {
+                        @include span;
+                    }
+                }
+            }
+
+            &-title {
+                @include txt(#212223, 1.28571429em, 24px, L700, HN700, A700);
+                padding: 0 0 24px 0;
+            }
+
+            .left {
+
+                &-text {
+                    @include span;
+
+                    &::after {
+                        content: "*";
+                        color: #f07d00;
+                        display: inline-block;
+                        vertical-align: top;
+                        margin-left: 3px;
+                    }
+                }
+            }
+
+            .right {
+                width: 406px;
+
+                #second,
+                #first,
+                #third,
+                #city,
+                #email {
+                    width: 382px;
+                    padding: 9px 12px;
+                }
+
+                .back {
+                    width: 240px;
+                    height: 240px;
+                    background-image: url(../img/profile.svg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    position: relative;
+
+                    input[type="file"] {
+                        display: none;
+                    }
+
+                    label[for="file"] {
+                        @include span;
+                        color: #fff;
+                        background-color: #21222380;
+                        text-align: center;
+                        width: 100%;
+                        padding: 15px 0;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                    }
+                }
+            }
+        }
+
+        &-job {
+            border:none;
+            margin: 0 0 80px 0;
+            &-title {
+                @include txt(#212223, 1.28571429em, 24px, L700, HN700, A700);
+                padding: 0 0 24px 0;
+            }
+
+            .row1, .row2, .row4, .row5{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .row3, .row6, .row7, .row8{
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+
+            .row1, .row2, .row4, .row5, .row6, .row7{
+                margin: 0 0 20px 0;
+            }
+
+            .row2, .row3, .row6, .row7, .row8{
+                .left{
+                    &-text{
+                        &::after{
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .row3, .row6{
+                .right{
+                    .v1, .v2, .v3, .v4, .v5{
+                        display: flex;
+                        align-items: center;
+                        margin: 0 0 10px 0;
+
+                        input[type="radio"]{
+                            margin: 0 5px 0 0;
+                        }
+
+                        label{
+                            @include span;
+                            &:hover{
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .row7{
+                .right{
+                    height: 75px;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-content: space-between;
+                    .v1, .v2, .v3, .v4, .v5{
+                        margin: 0 0 5px 0;
+                        display: flex;
+                        align-items: center;
+
+                        input[type="checkbox"]{
+                            margin: 0 5px 0 0;
+                        }
+
+                        label{
+                            @include span;
+
+                            &:hover{
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .row8{
+                .right{
+                    height: 54px;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-content: space-between;
+                    .v1, .v2, .v3, .v4{
+                        margin: 0 0 5px 0;
+                        display: flex;
+                        align-items: center;
+
+                        input[type="checkbox"]{
+                            margin: 0 5px 0 0;
+                        }
+
+                        label{
+                            @include span;
+
+                            &:hover{
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .left {
+
+                &-text {
+                    @include span;
+
+                    &::after {
+                        content: "*";
+                        color: #f07d00;
+                        display: inline-block;
+                        vertical-align: top;
+                        margin-left: 3px;
+                    }
+                }
+            }
+
+            .right {
+                width: 406px;
+
+                #job{
+                    width: 382px;
+                    padding: 9px 12px;
+                }
+            }
+        }
+
+        &-experience{
+            border: none;
+            &-title {
+                @include txt(#212223, 1.28571429em, 24px, L700, HN700, A700);
+                padding: 0 0 12px 0;
+            }
+            
+            label[for="on-off"]{
+                @include span;
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+
+            .text{
+                @include span;
+                margin: 18px 0 0 0;
+            }
+        }
+    }
+}

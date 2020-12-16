@@ -1,0 +1,10 @@
+@mixin txt ($c, $lh, $fz, $ff1, $ff2, $ff3) {
+    color: $c;
+    line-height: $lh;
+    font-size: $fz;
+    font-family: $ff1, $ff2, $ff3, sans-serif;
+}
+
+@mixin span {
+    @include txt(#212223, normal, 15px, L400, HN400, A400);
+}
