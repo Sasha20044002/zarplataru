@@ -580,6 +580,7 @@ body {
 }
 
 .main-form-experience {
+  margin: 0 0 80px 0;
   border: none;
 }
 
@@ -642,7 +643,7 @@ body {
           align-items: flex-start;
 }
 
-.main-form-experience .form .row1, .main-form-experience .form .row2, .main-form-experience .form .row3, .main-form-experience .form .row4, .main-form-experience .form .row5, .main-form-experience .form .row6, .main-form-experience .form .row7, .main-form-experience .form .row8, .main-form-experience .form .row9, .main-form-experience .form .row10 {
+.main-form-experience .form .row1, .main-form-experience .form .row2, .main-form-experience .form .row3, .main-form-experience .form .row4, .main-form-experience .form .row5, .main-form-experience .form .row6, .main-form-experience .form .row7, .main-form-experience .form .row8, .main-form-experience .form .row9 {
   margin: 0 0 20px 0;
 }
 
@@ -730,4 +731,165 @@ body {
 .main-form-experience .form .right #company, .main-form-experience .form .right #city, .main-form-experience .form .right #sphere, .main-form-experience .form .right #site, .main-form-experience .form .right #job {
   width: 382px;
   padding: 9px 12px;
+}
+
+.main-form-qualification {
+  border: none;
+  margin: 0 0 40px 0;
+}
+
+.main-form-qualification .row1, .main-form-qualification .row2, .main-form-qualification .row3, .main-form-qualification .row4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-form-qualification .row5, .main-form-qualification .row6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main-form-qualification .row2, .main-form-qualification .row3, .main-form-qualification .row4, .main-form-qualification .row5, .main-form-qualification .row6 {
+  margin: 0 0 20px 0;
+}
+
+.main-form-qualification .row5 .right .v1, .main-form-qualification .row5 .right .v2, .main-form-qualification .row5 .right .v3, .main-form-qualification .row5 .right .v4 {
+  margin: 0 0 10px 0;
+}
+
+.main-form-qualification .row5 .right .v1 label, .main-form-qualification .row5 .right .v2 label, .main-form-qualification .row5 .right .v3 label, .main-form-qualification .row5 .right .v4 label {
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+}
+
+.main-form-qualification .row6 .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main-form-qualification-title {
+  color: #212223;
+  line-height: 1.28571em;
+  font-size: 24px;
+  font-family: L700, HN700, A700, sans-serif;
+  padding: 0 0 24px 0;
+}
+
+.main-form-qualification #add {
+  display: none;
+}
+
+.main-form-qualification #add:checked ~ label[for="add"] {
+  display: none;
+}
+
+.main-form-qualification #add:checked ~ .form-2 {
+  display: block;
+}
+
+.main-form-qualification .form-2 {
+  display: none;
+}
+
+.main-form-qualification .form-2 {
+  margin: 40px 0 0 0;
+}
+
+.main-form-qualification .form-2 .row1 {
+  margin: 0 0 20px 0;
+}
+
+.main-form-qualification .form-2 .row1 .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-form-qualification label[for="add"] {
+  margin: 10px 0 0 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+  color: #0055D2;
+}
+
+.main-form-qualification label[for="add"]:nth-child(2) {
+  margin: 0;
+}
+
+.main-form-qualification label[for="add"]::before {
+  content: url(../img/plus.svg);
+  margin: 0 5px 0 0;
+}
+
+.main-form-qualification label[for="add"]:hover {
+  cursor: pointer;
+}
+
+.main-form-qualification .delete::before {
+  display: none;
+}
+
+.main-form-qualification .row4 .left-text::after, .main-form-qualification .row5 .left-text::after {
+  display: none;
+}
+
+.main-form-qualification .left-text {
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+}
+
+.main-form-qualification .left-text::after {
+  content: "*";
+  color: #f07d00;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 3px;
+}
+
+.main-form-qualification .right {
+  width: 406px;
+}
+
+.main-form-qualification .right #level, .main-form-qualification .right #school, .main-form-qualification .right #spec {
+  width: 382px;
+  padding: 6px 12px;
+}
+
+.main-form-qualification .right #city {
+  width: 191px;
+  padding: 6px 12px;
 }

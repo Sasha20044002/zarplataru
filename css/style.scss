@@ -429,6 +429,7 @@ body {
         }
 
         &-experience{
+            margin: 0 0 80px 0;
             border: none;
             &-title {
                 @include txt(#212223, 1.28571429em, 24px, L700, HN700, A700);
@@ -467,7 +468,7 @@ body {
                     align-items: flex-start;
                 }
 
-                .row1, .row2, .row3, .row4, .row5, .row6, .row7, .row8, .row9, .row10{
+                .row1, .row2, .row3, .row4, .row5, .row6, .row7, .row8, .row9{
                     margin: 0 0 20px 0;
                 }
 
@@ -553,6 +554,140 @@ body {
                         width: 382px;
                         padding: 9px 12px;
                     }
+                }
+            }
+        }
+
+        &-qualification{
+            border: none;
+            margin: 0 0 40px 0;
+
+            .row1, .row2, .row3, .row4{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .row5, .row6{
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+
+            .row2, .row3, .row4, .row5, .row6{
+                margin: 0 0 20px 0;
+            }
+
+            .row5{
+                .right{
+                    .v1, .v2, .v3, .v4{
+                        margin: 0 0 10px 0;
+                        label{
+                            @include span;
+                        }
+                    }
+                }
+            }
+
+            .row6{
+                .right{
+                    display: flex;
+                    align-items: flex-start;
+                }
+            }
+
+            &-title {
+                @include txt(#212223, 1.28571429em, 24px, L700, HN700, A700);
+                padding: 0 0 24px 0;
+            }
+
+            #add{
+                display: none;
+            }
+
+            #add:checked ~ label[for="add"]{
+                display: none;
+            }
+
+            #add:checked ~ .form-2{
+                display: block;
+            }
+
+            .form-2{
+                display: none;
+            }
+            
+            .form-2{
+                margin: 40px 0 0 0;
+                .row1{
+                    margin: 0 0 20px 0;
+                    .right{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+                }
+            }
+
+            label[for="add"]{
+                margin: 10px 0 0 35%;
+                display: flex;
+                align-self: center;
+                @include span;
+                color: #0055D2;
+                &:nth-child(2){
+                    margin: 0;
+                }
+                &::before {
+                    content: url(../img/plus.svg);
+                    margin: 0 5px 0 0;
+                }
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+
+            .delete{
+                &::before{
+                    display: none;
+                }
+            }
+            
+            .row4, .row5{
+                .left{
+                    &-text{
+                        &::after{
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .left{
+                &-text {
+                    @include span;
+
+                    &::after {
+                        content: "*";
+                        color: #f07d00;
+                        display: inline-block;
+                        vertical-align: top;
+                        margin-left: 3px;
+                    }
+                }
+            }
+            .right {
+                width: 406px;
+
+                #level, #school, #spec{
+                    width: 382px;
+                    padding: 6px 12px;
+                }
+
+                #city{
+                    width: 191px;
+                    padding: 6px 12px;
                 }
             }
         }
