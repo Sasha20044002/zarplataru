@@ -443,9 +443,117 @@ body {
                 }
             }
 
+            #on-off:checked ~ .form{
+                display: none;
+            }
+
             .text{
                 @include span;
                 margin: 18px 0 0 0;
+            }
+
+            .form{
+                margin: 15px 0 0 0;
+
+                .row1, .row2, .row3, .row5, .row6{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                .row4, .row7, .row8, .row9, .row10{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                }
+
+                .row1, .row2, .row3, .row4, .row5, .row6, .row7, .row8, .row9, .row10{
+                    margin: 0 0 20px 0;
+                }
+
+                .row3{
+                    .left{
+                        &-text{
+                            width: 144px;
+                        }
+                    }
+                }
+
+                .row3, .row4, .row5, .row10{
+                    .left{
+                        &-text{
+                            &::after{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+                .row4, .row9, .row10{
+                    .right{
+                        .v1, .v2, .v3, .v4, .v5{
+                            display: flex;
+                            align-items: center;
+                            margin: 0 0 10px 0;
+    
+                            input[type="radio"]{
+                                margin: 0 5px 0 0;
+                            }
+    
+                            label{
+                                @include span;
+                                &:hover{
+                                    cursor: pointer;
+                                }
+                            }
+
+                        }
+                        textarea{
+                            @include span;
+                            width: 438px;
+                            height: 78px;
+                            padding: 10px 12px; 
+                        }
+                    }
+                }
+
+                label[for="working"]{
+                    @include span;
+
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }   
+
+                #working{
+                    margin: 0 0 20px 40%;
+                }
+
+                #working:checked ~ .row8 {
+                    display: none;
+                }
+
+                .left{
+                    &-text {
+                        @include span;
+    
+                        &::after {
+                            content: "*";
+                            color: #f07d00;
+                            display: inline-block;
+                            vertical-align: top;
+                            margin-left: 3px;
+                        }
+                    }
+                }
+                .right {
+                    width: 406px;
+    
+                    #company, #city, #sphere, #site, #job{
+                        width: 382px;
+                        padding: 9px 12px;
+                    }
+                }
             }
         }
     }

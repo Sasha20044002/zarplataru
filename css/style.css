@@ -602,10 +602,132 @@ body {
   cursor: pointer;
 }
 
+.main-form-experience #on-off:checked ~ .form {
+  display: none;
+}
+
 .main-form-experience .text {
   color: #212223;
   line-height: normal;
   font-size: 15px;
   font-family: L400, HN400, A400, sans-serif;
   margin: 18px 0 0 0;
+}
+
+.main-form-experience .form {
+  margin: 15px 0 0 0;
+}
+
+.main-form-experience .form .row1, .main-form-experience .form .row2, .main-form-experience .form .row3, .main-form-experience .form .row5, .main-form-experience .form .row6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-form-experience .form .row4, .main-form-experience .form .row7, .main-form-experience .form .row8, .main-form-experience .form .row9, .main-form-experience .form .row10 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main-form-experience .form .row1, .main-form-experience .form .row2, .main-form-experience .form .row3, .main-form-experience .form .row4, .main-form-experience .form .row5, .main-form-experience .form .row6, .main-form-experience .form .row7, .main-form-experience .form .row8, .main-form-experience .form .row9, .main-form-experience .form .row10 {
+  margin: 0 0 20px 0;
+}
+
+.main-form-experience .form .row3 .left-text {
+  width: 144px;
+}
+
+.main-form-experience .form .row3 .left-text::after, .main-form-experience .form .row4 .left-text::after, .main-form-experience .form .row5 .left-text::after, .main-form-experience .form .row10 .left-text::after {
+  display: none;
+}
+
+.main-form-experience .form .row4 .right .v1, .main-form-experience .form .row4 .right .v2, .main-form-experience .form .row4 .right .v3, .main-form-experience .form .row4 .right .v4, .main-form-experience .form .row4 .right .v5, .main-form-experience .form .row9 .right .v1, .main-form-experience .form .row9 .right .v2, .main-form-experience .form .row9 .right .v3, .main-form-experience .form .row9 .right .v4, .main-form-experience .form .row9 .right .v5, .main-form-experience .form .row10 .right .v1, .main-form-experience .form .row10 .right .v2, .main-form-experience .form .row10 .right .v3, .main-form-experience .form .row10 .right .v4, .main-form-experience .form .row10 .right .v5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 10px 0;
+}
+
+.main-form-experience .form .row4 .right .v1 input[type="radio"], .main-form-experience .form .row4 .right .v2 input[type="radio"], .main-form-experience .form .row4 .right .v3 input[type="radio"], .main-form-experience .form .row4 .right .v4 input[type="radio"], .main-form-experience .form .row4 .right .v5 input[type="radio"], .main-form-experience .form .row9 .right .v1 input[type="radio"], .main-form-experience .form .row9 .right .v2 input[type="radio"], .main-form-experience .form .row9 .right .v3 input[type="radio"], .main-form-experience .form .row9 .right .v4 input[type="radio"], .main-form-experience .form .row9 .right .v5 input[type="radio"], .main-form-experience .form .row10 .right .v1 input[type="radio"], .main-form-experience .form .row10 .right .v2 input[type="radio"], .main-form-experience .form .row10 .right .v3 input[type="radio"], .main-form-experience .form .row10 .right .v4 input[type="radio"], .main-form-experience .form .row10 .right .v5 input[type="radio"] {
+  margin: 0 5px 0 0;
+}
+
+.main-form-experience .form .row4 .right .v1 label, .main-form-experience .form .row4 .right .v2 label, .main-form-experience .form .row4 .right .v3 label, .main-form-experience .form .row4 .right .v4 label, .main-form-experience .form .row4 .right .v5 label, .main-form-experience .form .row9 .right .v1 label, .main-form-experience .form .row9 .right .v2 label, .main-form-experience .form .row9 .right .v3 label, .main-form-experience .form .row9 .right .v4 label, .main-form-experience .form .row9 .right .v5 label, .main-form-experience .form .row10 .right .v1 label, .main-form-experience .form .row10 .right .v2 label, .main-form-experience .form .row10 .right .v3 label, .main-form-experience .form .row10 .right .v4 label, .main-form-experience .form .row10 .right .v5 label {
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+}
+
+.main-form-experience .form .row4 .right .v1 label:hover, .main-form-experience .form .row4 .right .v2 label:hover, .main-form-experience .form .row4 .right .v3 label:hover, .main-form-experience .form .row4 .right .v4 label:hover, .main-form-experience .form .row4 .right .v5 label:hover, .main-form-experience .form .row9 .right .v1 label:hover, .main-form-experience .form .row9 .right .v2 label:hover, .main-form-experience .form .row9 .right .v3 label:hover, .main-form-experience .form .row9 .right .v4 label:hover, .main-form-experience .form .row9 .right .v5 label:hover, .main-form-experience .form .row10 .right .v1 label:hover, .main-form-experience .form .row10 .right .v2 label:hover, .main-form-experience .form .row10 .right .v3 label:hover, .main-form-experience .form .row10 .right .v4 label:hover, .main-form-experience .form .row10 .right .v5 label:hover {
+  cursor: pointer;
+}
+
+.main-form-experience .form .row4 .right textarea, .main-form-experience .form .row9 .right textarea, .main-form-experience .form .row10 .right textarea {
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+  width: 438px;
+  height: 78px;
+  padding: 10px 12px;
+}
+
+.main-form-experience .form label[for="working"] {
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+}
+
+.main-form-experience .form label[for="working"]:hover {
+  cursor: pointer;
+}
+
+.main-form-experience .form #working {
+  margin: 0 0 20px 40%;
+}
+
+.main-form-experience .form #working:checked ~ .row8 {
+  display: none;
+}
+
+.main-form-experience .form .left-text {
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+}
+
+.main-form-experience .form .left-text::after {
+  content: "*";
+  color: #f07d00;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 3px;
+}
+
+.main-form-experience .form .right {
+  width: 406px;
+}
+
+.main-form-experience .form .right #company, .main-form-experience .form .right #city, .main-form-experience .form .right #sphere, .main-form-experience .form .right #site, .main-form-experience .form .right #job {
+  width: 382px;
+  padding: 9px 12px;
 }
