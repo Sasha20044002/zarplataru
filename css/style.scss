@@ -13,10 +13,11 @@ body {
 .main {
     display: flex;
     justify-content: space-between;
+    padding: 30px 0;
+    position: relative;
 
     &-form {
         width: 647px;
-        padding: 30px 0;
 
         &-fields {
             width: 100%;
@@ -1406,6 +1407,76 @@ body {
             padding: 10px 24px;
             border: none;
             margin: 40px 0 0 0;
+        }
+    }
+
+    .right{
+        .job{
+            width: 342px;
+            position: absolute;
+            top: 1280px;
+            right: 0;
+
+            &-title{
+                @include span;
+                font-size: 18px;
+                font-weight: 700;
+            }
+
+            &-text, span{
+                @include span;
+            }
+
+            .tick{
+                display: flex;
+                align-items: center;
+                @include span;
+                color: #4D9934;
+            }
+
+            .cross{
+                display: flex;
+                align-items: center;
+                @include span;
+                color: #CE2B27;
+            }
+        }
+
+        .experience{
+            width: 342px;
+            position: absolute;
+            right: 0;
+            top: 2000px;
+            span{
+                @include span;
+                font-size: 18px;
+                font-weight: 700;
+            }
+
+            p{
+                display: flex;
+                align-items: center;
+                @include span;
+                color: #4D9934;
+            }
+
+            ul{
+                list-style-type: none;
+                margin: 0 0 30px 0;
+                padding: 0;
+                li{
+                    @include span;
+
+                    &::before{
+                        content: '-';
+                        margin: 0 2px 0 0;
+                    }
+                }
+
+                &:last-child{
+                    margin: 0;
+                }
+            }
         }
     }
 }

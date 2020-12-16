@@ -44,11 +44,12 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 30px 0;
+  position: relative;
 }
 
 .main-form {
   width: 647px;
-  padding: 30px 0;
 }
 
 .main-form-fields {
@@ -1928,4 +1929,107 @@ body {
   padding: 10px 24px;
   border: none;
   margin: 40px 0 0 0;
+}
+
+.main .right .job {
+  width: 342px;
+  position: absolute;
+  top: 1280px;
+  right: 0;
+}
+
+.main .right .job-title {
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.main .right .job-text, .main .right .job span {
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+}
+
+.main .right .job .tick {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+  color: #4D9934;
+}
+
+.main .right .job .cross {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+  color: #CE2B27;
+}
+
+.main .right .experience {
+  width: 342px;
+  position: absolute;
+  right: 0;
+  top: 2000px;
+}
+
+.main .right .experience span {
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.main .right .experience p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+  color: #4D9934;
+}
+
+.main .right .experience ul {
+  list-style-type: none;
+  margin: 0 0 30px 0;
+  padding: 0;
+}
+
+.main .right .experience ul li {
+  color: #212223;
+  line-height: normal;
+  font-size: 15px;
+  font-family: L400, HN400, A400, sans-serif;
+}
+
+.main .right .experience ul li::before {
+  content: '-';
+  margin: 0 2px 0 0;
+}
+
+.main .right .experience ul:last-child {
+  margin: 0;
 }
